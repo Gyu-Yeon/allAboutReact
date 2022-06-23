@@ -1,8 +1,17 @@
 import "./App.css";
 import MyComponent from "./MyComponent";
+import Counter from "./Counter";
+import Say from "./Say";
 
 function App() {
-  return <MyComponent>리엑트</MyComponent>;
+  return(
+<div>
+<MyComponent>리엑트</MyComponent>;
+<Counter/>
+<Say/>
+</div>
+  ) 
+
 }
 
 export default App;
