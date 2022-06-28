@@ -3,14 +3,28 @@ import MyComponent from "./MyComponent";
 import Counter from "./Counter";
 import Say from "./Say";
 import EventPractice from "./EventPractice";
+import ValidationSample from "./ValidationSample";
 
 function App() {
   return (
     <div>
       <MyComponent>리엑트</MyComponent>;
+      <br />
+      <br />
+      <br />
       <Counter />
+      <br />
+      <br />
+      <br />
       <Say />
+      <br />
+      <br />
+      <br />
       <EventPractice />
+      <br />
+      <br />
+      <br />
+      <ValidationSample />
     </div>
   );
 }
