@@ -4,27 +4,22 @@ import Counter from "./Counter";
 import Say from "./Say";
 import EventPractice from "./EventPractice";
 import ValidationSample from "./ValidationSample";
+import IterationSample from "./IterationSample";
 
 function App() {
   return (
     <div>
-      <MyComponent>리엑트</MyComponent>;
-      <br />
-      <br />
-      <br />
+      {/* <MyComponent>리엑트</MyComponent>;
+     
       <Counter />
-      <br />
-      <br />
-      <br />
+      
       <Say />
-      <br />
-      <br />
-      <br />
+      
       <EventPractice />
-      <br />
-      <br />
-      <br />
-      <ValidationSample />
+      
+      <ValidationSample /> */}
+       
+      <IterationSample/>
     </div>
   );
 }
