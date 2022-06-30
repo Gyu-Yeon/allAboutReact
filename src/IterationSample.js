@@ -3,14 +3,15 @@ import { useState } from "react";
 const IterationSample = ()=>{
 
     const [list, setList] = useState([
-        {name: '흙'},
-        {name: '꽃'},
-        {name: '불'},
-        {name: '물'},
-    ])    
+        {id:1 ,name: '흙'},
+        {id:2 ,name: '꽃'},
+        {id:3 ,name: '불'},
+        {id:4 ,name: '물'},
+    ])
+    const [newNumber, setNewNumber] =useState(5);   
     const [inputValue, setInputValue] = useState("")
     const inputOnchange = (e) =>{
-        setInputValue(e.target.value)                
+        setInputValue(e.target.value)               
     }
     const deleteList = () =>{
         
@@ -22,27 +23,31 @@ const IterationSample = ()=>{
                 setList((prevState) => {            
                     return [
                         ...prevState,
-                        {name:inputValue}
+                        {id: newNumber, name:inputValue}
                     ]                       
                 })               
-                console.log(list)
+               setNewNumber((prev)=>{
+                return prev + 1
+               })
+               setInputValue("")
             }
 
+    const removeList = (id) =>{
+        const removed = list.filter((a)=>{
+           return a.id !== id
+        })
+        console.log(removed)
+        console.log(id)
+        setList(removed)
+    }       
 
-    const showList = list.map((a,i)=> {
-        return  (
-        <li        
-        key={i}> 
-        {a.name} 
-        <button         
-        onClick={()=>{
-        let newList = list.splice(i, 1)
-        setInputValue(newList)
+    const showList = list.map((a,i)=>         
+        <div key={a.id}>{a.name} <button onClick={()=>{
+            removeList(a.id)
         }}>
         삭제</button>
-        </li>)
-        
-    })
+        </div>        
+    )
 // 삭제 버튼 안에다가 a.id를 만들어 버튼 마다 a.id를 갖고 있게 하는 방법 말고, 버튼이 눌리면 그 버튼의 부모 element의 키값을 갖고와서 삭제하는 방법.
 return(
     <div>
