@@ -1,12 +1,16 @@
 import "./App.css";
+import { useState } from "react";
 import MyComponent from "./MyComponent";
 import Counter from "./Counter";
 import Say from "./Say";
 import EventPractice from "./EventPractice";
 import ValidationSample from "./ValidationSample";
 import IterationSample from "./IterationSample";
+import Info from "./Info";
 
 function App() {
+  const [visible, setVisible] = useState(false);
+
   return (
     <div>
       {/* <MyComponent>리엑트</MyComponent>;
@@ -18,8 +22,17 @@ function App() {
       <EventPractice />
       
       <ValidationSample /> */}
-       
-      <IterationSample/>
+
+      {/* <IterationSample/> */}
+      <button
+        onClick={() => {
+          setVisible(!visible);
+        }}
+      >
+        {visible ? "숨기기" : "보이기"}
+      </button>
+      <hr />
+      {visible && <Info />}
     </div>
   );
 }
