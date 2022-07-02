@@ -14,13 +14,13 @@ const Info = () => {
   };
 
   useEffect(() => {
-    console.log("effect");
+    console.log("rendered");
     console.log(name);
     return () => {
       console.log("clean Up");
       console.log(name);
     };
-  }, []);
+  });
 
   return (
     <div>

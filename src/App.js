@@ -7,6 +7,7 @@ import EventPractice from "./EventPractice";
 import ValidationSample from "./ValidationSample";
 import IterationSample from "./IterationSample";
 import Info from "./Info";
+import Example from "./Example";
 
 function App() {
   const [visible, setVisible] = useState(false);
