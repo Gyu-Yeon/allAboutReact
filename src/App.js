@@ -14,18 +14,18 @@ function App() {
 
   return (
     <div>
-      {/* <MyComponent>리엑트</MyComponent>;
-     
+      {/* <MyComponent>리엑트</MyComponent>; */}
+
       <Counter />
-      
-      <Say />
+
+      {/*<Say />
       
       <EventPractice />
       
       <ValidationSample /> */}
 
       {/* <IterationSample/> */}
-      <button
+      {/* <button
         onClick={() => {
           setVisible(!visible);
         }}
@@ -33,7 +33,7 @@ function App() {
         {visible ? "숨기기" : "보이기"}
       </button>
       <hr />
-      {visible && <Info />}
+      {visible && <Info />} */}
     </div>
   );
 }
