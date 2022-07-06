@@ -8,24 +8,27 @@ import ValidationSample from "./ValidationSample";
 import IterationSample from "./IterationSample";
 import Info from "./Info";
 import Example from "./Example";
+import Reducer from "./Reducer";
+import Average from "./Average";
+
 
 function App() {
   const [visible, setVisible] = useState(false);
 
   return (
     <div>
-      {/* <MyComponent>리엑트</MyComponent>;
+       {/* <MyComponent>리엑트</MyComponent>; */}
      
-      <Counter />
+      {/* <Counter /> */}
       
-      <Say />
+      {/*<Say />
       
       <EventPractice />
       
       <ValidationSample /> */}
 
       {/* <IterationSample/> */}
-      <button
+      {/* <button
         onClick={() => {
           setVisible(!visible);
         }}
@@ -33,7 +36,10 @@ function App() {
         {visible ? "숨기기" : "보이기"}
       </button>
       <hr />
-      {visible && <Info />}
+      {visible && <Info />} */}
+      {/* <Reducer/> */}
+
+      <Average/>
     </div>
   );
 }
