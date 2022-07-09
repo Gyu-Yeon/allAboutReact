@@ -11,16 +11,15 @@ import Example from "./Example";
 import Reducer from "./Reducer";
 import Average from "./Average";
 
-
 function App() {
   const [visible, setVisible] = useState(false);
 
   return (
     <div>
-       {/* <MyComponent>리엑트</MyComponent>; */}
-     
+      {/* <MyComponent>리엑트</MyComponent>; */}
+
       {/* <Counter /> */}
-      
+
       {/*<Say />
       
       <EventPractice />
@@ -38,8 +37,8 @@ function App() {
       <hr />
       {visible && <Info />} */}
       {/* <Reducer/> */}
-
-      <Average/>
+      <Info />
+      {/* <Average/> */}
     </div>
   );
 }
